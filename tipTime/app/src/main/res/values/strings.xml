@@ -8,4 +8,5 @@
     <string name="const_of_service">Const of Service</string>
     <string name="calculate">Calculate</string>
     <string name="todo">TODO</string>
+    <string name="tip_amount_s">Tip Amount: %s</string>
 </resources>

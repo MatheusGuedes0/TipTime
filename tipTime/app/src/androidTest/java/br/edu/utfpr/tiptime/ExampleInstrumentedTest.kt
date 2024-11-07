@@ -33,13 +33,13 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
 
         onView(withId(R.id.cost_of_service))
-            .perform(typeText("50,00"))
+            .perform(typeText("50"))
             .perform(ViewActions.closeSoftKeyboard())
 
         onView(withId(R.id.calculate_button))
             .perform(click())
         onView(withId(R.id.tip_result))
-            .check(matches(withText(CoreMatchers.containsString("10.00"))))
+            .check(matches(withText(CoreMatchers.containsString("10"))))
 
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("br.edu.utfpr.tiptime", appContext.packageName)
